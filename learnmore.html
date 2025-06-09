@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More | Yield Cycle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(90deg, #43a047, #66bb6a);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .logo-container .logo-text {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #dcedc8;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #27ae60;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .feature-card p {
+            font-size: 1.1em;
+            color: #34495e;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-section h3 {
+            font-size: 2em;
+            color: #27ae60;
+        }
+
+        .cta-section .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            background: #43a047;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-buttons a:hover {
+            background: #2e7d32;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .cta-section h3 {
+                font-size: 1.8em;
+            }
+
+            .cta-buttons a {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="log.jpg" alt="Logo">
+            <div class="logo-text">Yield Cycle</div>
+        </div>
+    </header>
+
+    <!-- Content Container -->
+    <div class="container">
+        <h2>Learn More About Yield Cycle</h2>
+
+        <div class="feature-cards">
+            <!-- Feature Card 1 -->
+            <div class="feature-card">
+                <h3>How It Works</h3>
+                <p>Our platform connects farmers directly to industries, ensuring fair prices, transparency, and quality sourcing.</p>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="feature-card">
+                <h3>Benefits for Farmers</h3>
+                <p>Farmers gain better access to markets, eliminate middlemen, and secure higher profits.</p>
+            </div>
+            <!-- Feature Card 3 -->
+            <div class="feature-card">
+                <h3>Benefits for Companies</h3>
+                <p>Companies can easily find reliable crop suppliers, ensuring consistent quality and transparency in pricing.</p>
+            </div>
+            <!-- Feature Card 4 -->
+            <div class="feature-card">
+                <h3>Sustainability</h3>
+                <p>We promote sustainable agricultural practices and contribute to reducing food waste by optimizing the supply chain.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="cta-section">
+            <h3>Join Us and Be Part of a Sustainable Future</h3>
+        </div>
+    </div>
+</body>
+</html>
